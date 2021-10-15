@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/songs', function () {
+    return view('Index');
+});
+
+Route::get('/songs/{song}',[SongController::class, 'show']
+
+Route::get('/songs/create', function () {
+    return view('Create');
+});
+
+Route::get('/songs/{index}/edit', function () {
+    return view('Edit');
+});
