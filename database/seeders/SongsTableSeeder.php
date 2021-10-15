@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate/Support/Facades/DB;
-use Carbon/carbon;
+use Illuminate\Support\Facades\DB;
+use Carbon\carbon;
 
 class SongsTableSeeder extends Seeder
 {
@@ -16,10 +16,10 @@ class SongsTableSeeder extends Seeder
     public function run()
     {
       DB::table('songs')->insert([
-          'title' => 'Ik ga zwemmen',
-          'singer' => 'Mart Hoogkamer',
-          'created_at' => Carbon::now,
-          'updated_at' => Carbon::now'
-      ]);
+            'title' => 'title1',
+            'singer' => 'singer1',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
     }
 }
