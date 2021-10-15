@@ -21,5 +21,30 @@ class SongsTableSeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+        DB::table('songs')->insert([
+              'title' => 'title2',
+              'singer' => 'singer2',
+              'created_at' => Carbon::now(),
+              'updated_at' => Carbon::now()
+          ]);
+          DB::table('songs')->insert([
+                'title' => 'title3',
+                'singer' => 'singer3',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now()
+            ]);
+            DB::table('songs')->insert([
+                  'title' => 'title4',
+                  'singer' => 'singer4',
+                  'created_at' => Carbon::now(),
+                  'updated_at' => Carbon::now()
+              ]);
+              DB::table('songs')->insert([
+                    'title' => 'title5',
+                    'singer' => 'singer5',
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ]);
+
     }
 }
